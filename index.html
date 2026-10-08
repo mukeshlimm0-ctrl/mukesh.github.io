@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b32">
+  <meta name="description" content="Mukesh Limbu's CET138 learning portfolio: five clear explanations and hands-on examples of full-stack development, HTML, CSS, Bootstrap, and JavaScript.">
+  <meta property="og:title" content="Mukesh Limbu — Full-stack learning portfolio">
+  <meta property="og:description" content="Five web-development topics, explained with small working examples.">
+  <meta property="og:type" content="website">
+  <title>Mukesh Limbu — Full-stack learning portfolio</title>
+
+  <!-- Bootstrap is used in the Bootstrap section's real grid/card example. The rest of the site works without the CDN. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the portfolio</a>
+
+  <header class="site-header">
+    <div class="site-shell header-inner">
+      <a class="brand" href="#top" aria-label="Mukesh Limbu portfolio home">
+        <span class="brand-mark" aria-hidden="true">ML</span>
+        <span class="brand-copy">
+          <strong>Mukesh Limbu</strong>
+          <span>FULL STACK LEARNING PORTFOLIO</span>
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#full-stack">Full stack</a></li>
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#bootstrap">Bootstrap</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="site-shell" id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> CET138 · Assignment 1</p>
+        <h1 id="hero-title">I’m Mukesh Limbu.<br><span>Learning full stack,</span><br>one layer at a time.</h1>
+        <p class="hero-intro">A hands-on portfolio about how the web fits together—from meaningful HTML structure to styles, frameworks, and interactive JavaScript.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#full-stack">Explore the examples <span class="button-arrow" aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-facts" aria-label="Portfolio at a glance">
+          <div class="hero-fact"><strong>05</strong><span>assignment topics</span></div>
+          <div class="hero-fact"><strong>05</strong><span>working examples</span></div>
+          <div class="hero-fact"><strong>01</strong><span>curious learner</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit-ring"></div>
+        <span class="art-label api"><i class="label-dot"></i> API ↔ server</span>
+        <span class="art-label ui"><i class="label-dot"></i> interface</span>
+        <span class="art-label data"><i class="label-dot"></i> data layer</span>
+        <div class="hero-screen">
+          <div class="screen-top">
+            <i class="window-dot"></i><i class="window-dot"></i><i class="window-dot"></i>
+            <span>mukesh.dev / learning</span><i class="screen-status"></i>
+          </div>
+          <div class="screen-content">
+            <div class="screen-kicker">THE WEB, END TO END</div>
+            <div class="screen-title">Build <em>with</em><br>curiosity.</div>
+            <div class="screen-code">
+              <span><b>01</b> structure <i></i></span>
+              <span><b>02</b> presentation <i></i></span>
+              <span><b>03</b> interaction <i></i></span>
+            </div>
+            <div class="stack-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JS</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-cue" aria-label="Portfolio contains five learning sections">
+      <strong aria-hidden="true">↗</strong><span>Choose a topic to open</span>
+      <span class="cue-note">Five topics. Five small demonstrations. One connected web.</span>
+    </div>
+
+    <main id="main">
+      <section class="learning-section reveal" id="full-stack" aria-labelledby="heading-full-stack">
+        <div class="section-marker">
+          <span class="section-number">01</span><span class="section-category">Foundations · Full stack development</span>
+          <button class="open-example-button" type="button" data-open-example data-example-title="Full Stack — request flow" aria-haspopup="dialog" aria-controls="exampleDialog">Open example <span aria-hidden="true">↗</span></button>
+          <button class="section-toggle" type="button" aria-expanded="true" aria-controls="full-stack-content" data-section-name="Full stack development" aria-label="Collapse Full stack development section">
+            <span class="section-toggle-icon" aria-hidden="true">−</span><span class="section-toggle-label">Hide section</span>
+          </button>
+        </div>
+        <div class="section-grid" id="full-stack-content">
+          <div class="section-copy">
+            <h2 id="heading-full-stack">Full stack is the <em>whole journey</em>, not one language.</h2>
+            <p>A full-stack web application brings together the parts a person uses in a browser and the services that work behind it. The front end presents the interface; the back end handles application logic; a database stores information; and APIs let those parts communicate.</p>
+            <p>A full-stack developer can work across that path and understand how the pieces fit together. It does <strong>not</strong> mean knowing every tool or being an expert in every layer.</p>
+            <ul class="key-points">
+              <li><span><span class="inline-term">Front end:</span> HTML, CSS, and JavaScript render the interface and respond to user actions.</span></li>
+              <li><span><span class="inline-term">Back end + API:</span> server code validates requests, applies rules, and sends a response.</span></li>
+              <li><span><span class="inline-term">Data layer:</span> a database stores and retrieves information the application needs.</span></li>
+            </ul>
+            <div class="learning-note"><strong>Key idea:</strong> follow a request from the browser to the server and back—that connection is the “full stack.”</div>
+          </div>
+
+          <div class="example-stack">
+            <article class="demo-card" aria-labelledby="request-demo-title">
+              <div class="demo-card-header">
+                <div><span class="demo-kicker">Working model · simulated</span><h3 id="request-demo-title">A sign-in request, step by step</h3></div>
+                <span class="demo-badge">Interactive</span>
+              </div>
+              <ol class="request-flow" id="requestFlow">
+                <li class="flow-step"><span class="flow-icon" aria-hidden="true">01</span><span class="flow-description"><strong>Browser</strong><span>Collects the form input.</span></span><span class="flow-tag">UI</span></li>
+                <li class="flow-step"><span class="flow-icon" aria-hidden="true">02</span><span class="flow-description"><strong>Server / API</strong><span>Checks the request and rules.</span></span><span class="flow-tag">Logic</span></li>
+                <li class="flow-step"><span class="flow-icon" aria-hidden="true">03</span><span class="flow-description"><strong>Database</strong><span>Reads or updates stored data.</span></span><span class="flow-tag">Data</span></li>
+                <li class="flow-step"><span class="flow-icon" aria-hidden="true">04</span><span class="flow-description"><strong>Response</strong><span>Returns a result to the browser.</span></span><span class="flow-tag">Result</span></li>
+              </ol>
+              <div class="demo-actions">
+                <button class="button button-dark" id="traceButton" type="button">Trace the request <span class="button-arrow" aria-hidden="true">→</span></button>
+              </div>
+              <p class="live-message" id="traceStatus" aria-live="polite">The animation models the flow; it does not contact a live server.</p>
+            </article>
+            <div class="code-panel">
+              <div class="code-panel-header"><span>Request cycle</span><span>Concept sketch</span></div>
+              <pre><code><span class="code-blue">Browser</span> → <span class="code-green">HTTP request</span> → <span class="code-orange">Server / API</span>
+                         ↓
+                    <span class="code-green">Database</span>
+
+<span class="code-blue">Browser</span> ← <span class="code-green">HTML or JSON response</span> ← <span class="code-orange">Server</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section is-reversed reveal" id="html" aria-labelledby="heading-html">
+        <div class="section-marker">
+          <span class="section-number">02</span><span class="section-category">Structure · HTML</span>
+          <button class="open-example-button" type="button" data-open-example data-example-title="HTML — semantic form" aria-haspopup="dialog" aria-controls="exampleDialog">Open example <span aria-hidden="true">↗</span></button>
+          <button class="section-toggle" type="button" aria-expanded="true" aria-controls="html-content" data-section-name="HTML" aria-label="Collapse HTML section">
+            <span class="section-toggle-icon" aria-hidden="true">−</span><span class="section-toggle-label">Hide section</span>
+          </button>
+        </div>
+        <div class="section-grid" id="html-content">
+          <div class="section-copy">
+            <h2 id="heading-html">HTML gives a page its <em>meaning</em>.</h2>
+            <p>HTML (HyperText Markup Language) describes the structure and purpose of content. Semantic elements such as <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and headings make a document easier for browsers, assistive technology, search tools, and other developers to understand.</p>
+            <p>Good HTML is more than a collection of tags. Headings should have a sensible order, links should describe their destination, and every form control needs a label. Native input types and attributes can provide useful browser validation before JavaScript is involved.</p>
+            <ul class="key-points">
+              <li><span>Use semantic elements to communicate what each region or item represents.</span></li>
+              <li><span>Connect a <code>&lt;label&gt;</code> to its input so it is easier to identify and operate.</span></li>
+              <li><span>Use built-in attributes such as <code>required</code>, <code>minlength</code>, and <code>type="date"</code>.</span></li>
+            </ul>
+            <div class="learning-note"><strong>Try it:</strong> submit the form with a missing or too-short goal. The browser uses native HTML constraints to prevent invalid input.</div>
+          </div>
+
+          <div class="example-stack">
+            <article class="demo-card" aria-labelledby="goal-demo-title">
+              <div class="demo-card-header">
+                <div><span class="demo-kicker">Working HTML form</span><h3 id="goal-demo-title">Set a learning goal</h3></div>
+                <span class="demo-badge">Native validation</span>
+              </div>
+              <form class="goal-form" id="goalForm">
+                <div>
+                  <label for="goalTitle">What do you want to build?</label>
+                  <input id="goalTitle" name="goal" type="text" required minlength="3" maxlength="60" placeholder="e.g. A responsive landing page" autocomplete="off" aria-describedby="goalHint">
+                  <p class="input-hint" id="goalHint">Enter at least 3 characters. This example runs only in your browser.</p>
+                </div>
+                <div class="form-two-col">
+                  <div>
+                    <label for="goalDate">Target date</label>
+                    <input id="goalDate" name="due" type="date" required>
+                  </div>
+                  <div>
+                    <label for="goalFocus">Main focus</label>
+                    <input id="goalFocus" name="focus" type="text" value="HTML + CSS" readonly aria-readonly="true">
+                  </div>
+                </div>
+                <button class="button button-dark" type="submit">Save this goal <span class="button-arrow" aria-hidden="true">→</span></button>
+              </form>
+              <p class="goal-result" id="goalResult" aria-live="polite">Your saved goal will appear here.</p>
+            </article>
+            <div class="code-panel">
+              <div class="code-panel-header"><span>Semantic form markup</span><span>HTML</span></div>
+              <pre><code><span class="code-orange">&lt;form&gt;</span>
+  <span class="code-orange">&lt;label</span> <span class="code-blue">for</span>=<span class="code-green">"goal"</span><span class="code-orange">&gt;</span>Learning goal<span class="code-orange">&lt;/label&gt;</span>
+  <span class="code-orange">&lt;input</span> <span class="code-blue">id</span>=<span class="code-green">"goal"</span> <span class="code-blue">name</span>=<span class="code-green">"goal"</span>
+    <span class="code-blue">required minlength</span>=<span class="code-green">"3"</span><span class="code-orange">&gt;</span>
+  <span class="code-orange">&lt;button</span> <span class="code-blue">type</span>=<span class="code-green">"submit"</span><span class="code-orange">&gt;</span>Save<span class="code-orange">&lt;/button&gt;</span>
+<span class="code-orange">&lt;/form&gt;</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section reveal" id="css" aria-labelledby="heading-css">
+        <div class="section-marker">
+          <span class="section-number">03</span><span class="section-category">Presentation · CSS</span>
+          <button class="open-example-button" type="button" data-open-example data-example-title="CSS — live style playground" aria-haspopup="dialog" aria-controls="exampleDialog">Open example <span aria-hidden="true">↗</span></button>
+          <button class="section-toggle" type="button" aria-expanded="true" aria-controls="css-content" data-section-name="CSS" aria-label="Collapse CSS section">
+            <span class="section-toggle-icon" aria-hidden="true">−</span><span class="section-toggle-label">Hide section</span>
+          </button>
+        </div>
+        <div class="section-grid" id="css-content">
+          <div class="section-copy">
+            <h2 id="heading-css">CSS turns structure into <em>experience</em>.</h2>
+            <p>CSS (Cascading Style Sheets) controls how HTML is presented. The cascade resolves which rules apply; specificity and source order help decide between competing declarations. Inheritance lets some properties, such as text color, flow from a parent to its children.</p>
+            <p>The box model describes an element as content surrounded by padding, border, and margin. Flexbox and Grid arrange elements; media queries adapt the layout to different screens. Custom properties keep repeated values consistent.</p>
+            <ul class="key-points">
+              <li><span>Separate content from presentation so each can be changed more easily.</span></li>
+              <li><span>Use responsive layouts and flexible measurements instead of designing for one screen size.</span></li>
+              <li><span>Keep motion subtle and respect the user’s reduced-motion preference.</span></li>
+            </ul>
+            <div class="learning-note"><strong>Try it:</strong> move the slider. JavaScript updates one CSS custom property; CSS controls the card’s rounded corners.</div>
+          </div>
+
+          <div class="example-stack">
+            <article class="demo-card" aria-labelledby="css-demo-title">
+              <div class="demo-card-header">
+                <div><span class="demo-kicker">Live CSS playground</span><h3 id="css-demo-title">One variable, a visible change</h3></div>
+                <span class="demo-badge">CSS custom property</span>
+              </div>
+              <div class="css-card-sample" id="cssSample" style="--demo-radius: 20px">
+                <span class="sample-label">A responsive component</span>
+                <h4>Small details shape the feel.</h4>
+                <p>Spacing, color, type, and shape work together to make an interface feel clear and consistent.</p>
+                <span class="sample-rule"><i aria-hidden="true"></i> Built with reusable styles</span>
+              </div>
+              <div class="range-control">
+                <label class="range-label" for="radiusRange"><span>Card corner radius</span><output id="radiusValue" for="radiusRange">20 px</output></label>
+                <input type="range" id="radiusRange" min="8" max="40" value="20" aria-describedby="radiusHelp">
+                <p class="range-help" id="radiusHelp">Use the arrow keys or drag the control to change the radius.</p>
+              </div>
+            </article>
+            <div class="code-panel">
+              <div class="code-panel-header"><span>Responsive CSS</span><span>CSS</span></div>
+              <pre><code><span class="code-orange">.css-card-sample</span> {
+  <span class="code-blue">border-radius</span>: <span class="code-green">var(--demo-radius, 20px)</span>;
+  <span class="code-blue">transition</span>: <span class="code-green">border-radius .2s ease</span>;
+}
+
+<span class="code-orange">@media (max-width: 46rem)</span> {
+  <span class="code-orange">.section-grid</span> {
+    <span class="code-blue">grid-template-columns</span>: <span class="code-green">1fr</span>;
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section is-reversed reveal" id="bootstrap" aria-labelledby="heading-bootstrap">
+        <div class="section-marker">
+          <span class="section-number">04</span><span class="section-category">Framework · Bootstrap</span>
+          <button class="open-example-button" type="button" data-open-example data-example-title="Bootstrap — responsive grid" aria-haspopup="dialog" aria-controls="exampleDialog">Open example <span aria-hidden="true">↗</span></button>
+          <button class="section-toggle" type="button" aria-expanded="true" aria-controls="bootstrap-content" data-section-name="Bootstrap Framework" aria-label="Collapse Bootstrap Framework section">
+            <span class="section-toggle-icon" aria-hidden="true">−</span><span class="section-toggle-label">Hide section</span>
+          </button>
+        </div>
+        <div class="section-grid" id="bootstrap-content">
+          <div class="section-copy">
+            <h2 id="heading-bootstrap">Bootstrap speeds up <em>consistent layouts</em>.</h2>
+            <p>Bootstrap is a front-end framework with a responsive, mobile-first grid plus ready-made components and utility classes. Its 12-column grid uses breakpoints: a column can take the full row on a small screen, then share space at larger widths.</p>
+            <p>Classes such as <code>container</code>, <code>row</code>, <code>col-sm-6</code>, and <code>card</code> provide a familiar starting point. Bootstrap does not replace HTML knowledge or thoughtful design: developers still choose semantic elements, check accessibility, and customize styles to suit the project.</p>
+            <ul class="key-points">
+              <li><span><strong>Grid:</strong> responsive rows and columns arrange content across screen sizes.</span></li>
+              <li><span><strong>Components:</strong> reusable patterns such as cards and buttons reduce repeated setup.</span></li>
+              <li><span><strong>Utilities:</strong> concise classes adjust spacing, color, display, and more.</span></li>
+            </ul>
+            <div class="learning-note"><strong>What this shows:</strong> resize the page to see the real Bootstrap grid move from one column to two, then three.</div>
+          </div>
+
+          <div class="example-stack">
+            <div class="demo-card bootstrap-panel" aria-labelledby="bootstrap-demo-title">
+              <div class="demo-card-header">
+                <div><span class="demo-kicker">Working framework example</span><h3 id="bootstrap-demo-title">A responsive learning grid</h3></div>
+                <span class="demo-badge">Bootstrap 5</span>
+              </div>
+              <div class="bs-demo">
+                <div class="container">
+                  <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <article class="card h-100 course-card">
+                        <div class="card-body">
+                          <span class="badge rounded-pill text-bg-success">Structure</span>
+                          <h4 class="card-title">HTML</h4>
+                          <p class="card-text">Create a clear, semantic document that browsers and people can understand.</p>
+                          <a class="btn btn-outline-success" href="#html">Explore HTML</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <article class="card h-100 course-card">
+                        <div class="card-body">
+                          <span class="badge rounded-pill text-bg-success">Presentation</span>
+                          <h4 class="card-title">CSS</h4>
+                          <p class="card-text">Style the page and adapt its layout to the screen in front of you.</p>
+                          <a class="btn btn-outline-success" href="#css">Explore CSS</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                      <article class="card h-100 course-card">
+                        <div class="card-body">
+                          <span class="badge rounded-pill text-bg-success">Interaction</span>
+                          <h4 class="card-title">JavaScript</h4>
+                          <p class="card-text">Respond to events, update the page, and provide useful feedback.</p>
+                          <a class="btn btn-outline-success" href="#javascript">Explore JS</a>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="bootstrap-footnote">The example uses Bootstrap’s real grid and card classes from the public CDN. Small fallback rules keep it readable if the CDN is unavailable.</p>
+            </div>
+            <div class="code-panel">
+              <div class="code-panel-header"><span>Grid and card classes</span><span>Bootstrap HTML</span></div>
+              <pre><code><span class="code-orange">&lt;div</span> <span class="code-blue">class</span>=<span class="code-green">"container"</span><span class="code-orange">&gt;</span>
+  <span class="code-orange">&lt;div</span> <span class="code-blue">class</span>=<span class="code-green">"row g-3"</span><span class="code-orange">&gt;</span>
+    <span class="code-orange">&lt;div</span> <span class="code-blue">class</span>=<span class="code-green">"col-12 col-sm-6 col-lg-4"</span><span class="code-orange">&gt;</span>
+      <span class="code-orange">&lt;article</span> <span class="code-blue">class</span>=<span class="code-green">"card h-100"</span><span class="code-orange">&gt;</span>
+        <span class="code-orange">&lt;div</span> <span class="code-blue">class</span>=<span class="code-green">"card-body"</span><span class="code-orange">&gt;</span>
+          <span class="code-orange">&lt;h3</span> <span class="code-blue">class</span>=<span class="code-green">"card-title"</span><span class="code-orange">&gt;</span>Topic<span class="code-orange">&lt;/h3&gt;</span>
+        <span class="code-orange">&lt;/div&gt;</span>
+      <span class="code-orange">&lt;/article&gt;</span>
+    <span class="code-orange">&lt;/div&gt;</span>
+  <span class="code-orange">&lt;/div&gt;</span>
+<span class="code-orange">&lt;/div&gt;</span></code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learning-section reveal" id="javascript" aria-labelledby="heading-javascript">
+        <div class="section-marker">
+          <span class="section-number">05</span><span class="section-category">Interaction · JavaScript</span>
+          <button class="open-example-button" type="button" data-open-example data-example-title="JavaScript — practice checklist" aria-haspopup="dialog" aria-controls="exampleDialog">Open example <span aria-hidden="true">↗</span></button>
+          <button class="section-toggle" type="button" aria-expanded="true" aria-controls="javascript-content" data-section-name="JavaScript" aria-label="Collapse JavaScript section">
+            <span class="section-toggle-icon" aria-hidden="true">−</span><span class="section-toggle-label">Hide section</span>
+          </button>
+        </div>
+        <div class="section-grid" id="javascript-content">
+          <div class="section-copy">
+            <h2 id="heading-javascript">JavaScript makes the page <em>respond</em>.</h2>
+            <p>JavaScript is a programming language that can run in the browser. It can listen for events, read or validate input, change the Document Object Model (DOM), and update interface state without reloading the page.</p>
+            <p>In a larger application, the browser may also call a back-end API. The small example here stays in the browser: it adds tasks to the DOM and lets you mark them complete. It does not save them to a database, so a refresh starts the list over.</p>
+            <ul class="key-points">
+              <li><span><strong>Events:</strong> a submit or click tells the program when to act.</span></li>
+              <li><span><strong>State:</strong> the completed-task count changes as the list changes.</span></li>
+              <li><span><strong>Safer rendering:</strong> new task text is inserted with <code>textContent</code>, not treated as HTML.</span></li>
+            </ul>
+            <div class="learning-note"><strong>Try it:</strong> add a task, then activate its circle to toggle completion. The count updates immediately.</div>
+          </div>
+
+          <div class="example-stack">
+            <article class="demo-card" aria-labelledby="task-demo-title">
+              <div class="demo-card-header">
+                <div><span class="demo-kicker">Working JavaScript demo</span><h3 id="task-demo-title">A tiny practice checklist</h3></div>
+                <span class="demo-badge">Browser only</span>
+              </div>
+              <div class="task-demo">
+                <ul class="task-list" id="taskList" aria-label="Practice tasks">
+                  <li class="task-item" data-task><button class="task-check" type="button" data-complete-task aria-pressed="false" aria-label="Mark complete: Outline semantic headings">○</button><span class="task-label">Outline semantic headings</span></li>
+                  <li class="task-item" data-task><button class="task-check" type="button" data-complete-task aria-pressed="false" aria-label="Mark complete: Test a responsive layout">○</button><span class="task-label">Test a responsive layout</span></li>
+                </ul>
+                <form class="task-form" id="taskForm">
+                  <label for="taskInput">Add a practice task</label>
+                  <div class="inline-fields">
+                    <input id="taskInput" name="task" type="text" required maxlength="60" placeholder="e.g. Add a contact form" autocomplete="off">
+                    <button class="button button-dark" type="submit">Add task <span class="button-arrow" aria-hidden="true">+</span></button>
+                  </div>
+                </form>
+                <p class="task-count" id="taskCount" role="status">0 of 2 complete · this list is not saved</p>
+              </div>
+            </article>
+            <div class="code-panel">
+              <div class="code-panel-header"><span>Respond to a form event</span><span>JavaScript</span></div>
+              <pre><code><span class="code-orange">form</span>.addEventListener(<span class="code-green">"submit"</span>, (event) =&gt; {
+  event.preventDefault();
+  const title = input.value.trim();
+  if (!title) return;
+
+  const label = document.createElement(<span class="code-green">"span"</span>);
+  label.textContent = title;
+  list.append(label);
+});</code></pre>
+            </div>
+            <div class="js-note"><strong>Why use <code>textContent</code>?</strong> It treats user input as text rather than executable markup, which is a safer default for displaying it.</div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <div class="footer-top">
+        <div class="footer-intro">
+          <h2>CET138 Full Stack Development</h2>
+          <p>Portfolio demonstrating understanding of modern web technologies</p>
+        </div>
+        <div class="footer-tech">
+          <h3>Technologies Showcased</h3>
+          <ul class="footer-tech-list" aria-label="Technologies showcased">
+            <li><span class="tech-logo" role="img" aria-label="HTML5"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#f2b51c" d="M7 3h34l-3.1 35L24 45 10.1 38z"/><path fill="#dc9512" d="M24 7v34l11-3 2.5-31z" opacity=".35"/><text x="24" y="33" text-anchor="middle" fill="#fff" font-size="24" font-weight="800" font-family="Arial,sans-serif">5</text></svg></span></li>
+            <li><span class="tech-logo" role="img" aria-label="CSS3"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="#22c3c8" d="M7 3h34l-3.1 35L24 45 10.1 38z"/><path fill="#139ba8" d="M24 7v34l11-3 2.5-31z" opacity=".38"/><text x="24" y="33" text-anchor="middle" fill="#fff" font-size="24" font-weight="800" font-family="Arial,sans-serif">3</text></svg></span></li>
+            <li><span class="tech-logo" role="img" aria-label="Bootstrap"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="4" y="4" width="40" height="40" rx="8" fill="#6653ce"/><text x="24" y="34" text-anchor="middle" fill="#fff" font-size="29" font-weight="700" font-family="Arial,sans-serif">B</text></svg></span></li>
+            <li><span class="tech-logo" role="img" aria-label="JavaScript"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><rect x="4" y="4" width="40" height="40" rx="5" fill="#f1c232"/><text x="24" y="32" text-anchor="middle" fill="#392d20" font-size="16" font-weight="800" font-family="Arial,sans-serif">JS</text></svg></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <p class="footer-bottom">© 2026 Full Stack Development Portfolio. Created for CET138 Assignment.</p>
+    </div>
+  </footer>
+
+  <dialog class="topic-dialog" id="topicDialog" aria-labelledby="topicDialogTitle">
+    <div class="topic-dialog-panel">
+      <div class="topic-dialog-header">
+        <div class="topic-dialog-heading">
+          <span class="topic-dialog-kicker">LEARNING TOPIC <span id="topicSlideCount">01 / 05</span></span>
+          <h2 id="topicDialogTitle">Topic</h2>
+        </div>
+        <div class="topic-dialog-actions">
+          <button class="topic-dialog-nav" id="previousTopicButton" type="button" aria-label="Previous topic">← Previous</button>
+          <button class="topic-dialog-nav" id="nextTopicButton" type="button" aria-label="Next topic">Next →</button>
+          <button class="topic-dialog-back" id="closeTopicButton" type="button">Back to topics</button>
+        </div>
+      </div>
+      <div class="topic-dialog-content" id="topicDialogContent"></div>
+    </div>
+  </dialog>
+
+  <dialog class="example-dialog" id="exampleDialog" aria-labelledby="exampleDialogTitle">
+    <div class="example-dialog-panel">
+      <div class="example-dialog-header">
+        <div>
+          <span class="example-dialog-kicker">INTERACTIVE EXAMPLE</span>
+          <h2 id="exampleDialogTitle">Example</h2>
+        </div>
+        <button class="example-dialog-close" id="closeExampleButton" type="button" aria-label="Close example">×</button>
+      </div>
+      <div class="example-dialog-content" id="exampleDialogContent"></div>
+    </div>
+  </dialog>
+
+  <noscript>
+    <p class="site-shell learning-note">The explanations and code examples are available without JavaScript. The interactive demonstrations need JavaScript enabled.</p>
+  </noscript>
+
+  <script>
+    (() => {
+      // Theme toggle: remember the visitor's choice, with the system theme as a fallback.
+      const root = document.documentElement;
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = themeToggle && themeToggle.querySelector(".theme-icon");
+      const themeLabel = themeToggle && themeToggle.querySelector(".theme-label");
+      let initialTheme = "light";
+      try {
+        const savedTheme = localStorage.getItem("mukesh-portfolio-theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          initialTheme = savedTheme;
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          initialTheme = "dark";
+        }
+      } catch (_) {
+        // Storage can be unavailable in private or restricted browsing contexts.
+      }
+      root.dataset.theme = initialTheme;
+      const updateThemeButton = () => {
+        const darkIsActive = root.dataset.theme === "dark";
+        const nextLabel = darkIsActive ? "Light mode" : "Dark mode";
+        if (themeIcon) themeIcon.textContent = darkIsActive ? "☀" : "☾";
+        if (themeLabel) themeLabel.textContent = nextLabel;
+        if (themeToggle) {
+          themeToggle.setAttribute("aria-label", `Switch to ${darkIsActive ? "light" : "dark"} mode`);
+          themeToggle.setAttribute("title", `Switch to ${darkIsActive ? "light" : "dark"} mode`);
+        }
+      };
+      updateThemeButton();
+      if (themeToggle) {
+        themeToggle.addEventListener("click", () => {
+          root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+          updateThemeButton();
+          try {
+            localStorage.setItem("mukesh-portfolio-theme", root.dataset.theme);
+          } catch (_) {
+            // The theme still switches for this page view if storage is unavailable.
+          }
+        });
+      }
+
+      // Open each topic's existing live demo in a dialog without duplicating its interactive controls.
+      const exampleDialog = document.getElementById("exampleDialog");
+      const exampleDialogContent = document.getElementById("exampleDialogContent");
+      const exampleDialogTitle = document.getElementById("exampleDialogTitle");
+      const closeExampleButton = document.getElementById("closeExampleButton");
+      let activeExample = null;
+
+      const restoreExample = () => {
+        if (!activeExample) return;
+        const { example, placeholder, trigger } = activeExample;
+        if (placeholder.parentNode) placeholder.parentNode.insertBefore(example, placeholder);
+        placeholder.remove();
+        activeExample = null;
+        trigger.focus();
+      };
+
+      const closeExample = () => {
+        if (exampleDialog && exampleDialog.open && typeof exampleDialog.close === "function") {
+          exampleDialog.close();
+        } else if (exampleDialog) {
+          exampleDialog.removeAttribute("open");
+          restoreExample();
+        }
+      };
+
+      document.querySelectorAll("[data-open-example]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          if (!exampleDialog || !exampleDialogContent || activeExample) return;
+          const section = trigger.closest(".learning-section");
+          const example = section && section.querySelector(".example-stack");
+          if (!example) return;
+          const placeholder = document.createComment("example location");
+          example.parentNode.insertBefore(placeholder, example);
+          activeExample = { example, placeholder, trigger };
+          exampleDialogTitle.textContent = trigger.dataset.exampleTitle || "Interactive example";
+          exampleDialogContent.append(example);
+          if (typeof exampleDialog.showModal === "function") exampleDialog.showModal();
+          else exampleDialog.setAttribute("open", "");
+        });
+      });
+
+      if (closeExampleButton) closeExampleButton.addEventListener("click", closeExample);
+      if (exampleDialog) {
+        exampleDialog.addEventListener("close", restoreExample);
+        exampleDialog.addEventListener("click", (event) => {
+          if (event.target === exampleDialog) closeExample();
+        });
+      }
+
+      // Each topic can be opened or hidden independently. Navigation always opens its topic.
+      document.querySelectorAll(".section-toggle").forEach((toggle) => {
+        const panel = document.getElementById(toggle.getAttribute("aria-controls"));
+        const label = toggle.querySelector(".section-toggle-label");
+        const icon = toggle.querySelector(".section-toggle-icon");
+        const name = toggle.dataset.sectionName || "topic";
+        if (!panel) return;
+        toggle.addEventListener("click", () => {
+          const open = toggle.getAttribute("aria-expanded") !== "true";
+          toggle.setAttribute("aria-expanded", String(open));
+          panel.hidden = !open;
+          toggle.setAttribute("aria-label", `${open ? "Collapse" : "Open"} ${name} section`);
+          if (label) label.textContent = open ? "Hide section" : "Open section";
+          if (icon) icon.textContent = open ? "−" : "+";
+        });
+      });
+      // Topic navigation works like slides: show one topic in a modal, without scrolling the page.
+      const topicDialog = document.getElementById("topicDialog");
+      const topicDialogContent = document.getElementById("topicDialogContent");
+      const topicDialogTitle = document.getElementById("topicDialogTitle");
+      const topicSlideCount = document.getElementById("topicSlideCount");
+      const previousTopicButton = document.getElementById("previousTopicButton");
+      const nextTopicButton = document.getElementById("nextTopicButton");
+      const closeTopicButton = document.getElementById("closeTopicButton");
+      const topicSections = Array.from(document.querySelectorAll(".learning-section"));
+      let activeTopic = null;
+
+      const restoreTopic = (returnFocus = false) => {
+        if (!activeTopic) return;
+        const { section, placeholder, returnTrigger } = activeTopic;
+        if (placeholder.parentNode) placeholder.parentNode.insertBefore(section, placeholder);
+        placeholder.remove();
+        activeTopic = null;
+        if (returnFocus && returnTrigger && returnTrigger.isConnected) returnTrigger.focus();
+      };
+
+      const updateTopicControls = () => {
+        if (!activeTopic) return;
+        const index = topicSections.indexOf(activeTopic.section);
+        const total = topicSections.length;
+        if (topicSlideCount) topicSlideCount.textContent = `${String(index + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
+        if (previousTopicButton) previousTopicButton.disabled = index <= 0;
+        if (nextTopicButton) nextTopicButton.disabled = index >= total - 1;
+      };
+
+      const openTopic = (section, opener) => {
+        if (!section || !topicDialog || !topicDialogContent) return;
+        const returnTrigger = activeTopic ? activeTopic.returnTrigger : opener;
+        if (activeTopic) restoreTopic(false);
+
+        const sectionToggle = section.querySelector(".section-toggle");
+        if (sectionToggle && sectionToggle.getAttribute("aria-expanded") === "false") sectionToggle.click();
+        const placeholder = document.createComment("topic slide location");
+        const parent = section.parentNode;
+        if (!parent) return;
+        parent.insertBefore(placeholder, section);
+        activeTopic = { section, placeholder, returnTrigger };
+        section.classList.add("is-visible");
+        const heading = section.querySelector(".section-copy h2");
+        if (topicDialogTitle) topicDialogTitle.textContent = heading ? heading.textContent : "Learning topic";
+        topicDialogContent.append(section);
+        topicDialogContent.scrollTop = 0;
+        updateTopicControls();
+
+        if (!topicDialog.open) {
+          if (typeof topicDialog.showModal === "function") topicDialog.showModal();
+          else topicDialog.setAttribute("open", "");
+        }
+      };
+
+      const closeTopic = () => {
+        if (topicDialog && topicDialog.open && typeof topicDialog.close === "function") {
+          topicDialog.close();
+        } else if (topicDialog) {
+          topicDialog.removeAttribute("open");
+          restoreTopic(true);
+        }
+      };
+
+      if (previousTopicButton) previousTopicButton.addEventListener("click", () => {
+        if (!activeTopic) return;
+        const index = topicSections.indexOf(activeTopic.section);
+        if (index > 0) openTopic(topicSections[index - 1], activeTopic.returnTrigger);
+      });
+      if (nextTopicButton) nextTopicButton.addEventListener("click", () => {
+        if (!activeTopic) return;
+        const index = topicSections.indexOf(activeTopic.section);
+        if (index < topicSections.length - 1) openTopic(topicSections[index + 1], activeTopic.returnTrigger);
+      });
+      if (closeTopicButton) closeTopicButton.addEventListener("click", closeTopic);
+      if (topicDialog) {
+        topicDialog.addEventListener("close", () => restoreTopic(true));
+        topicDialog.addEventListener("click", (event) => {
+          if (event.target === topicDialog) closeTopic();
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const id = link.hash.slice(1);
+          const target = document.getElementById(id);
+          const topic = target && (target.matches(".learning-section") ? target : target.closest(".learning-section"));
+          if (topic) {
+            event.preventDefault();
+            if (exampleDialog && exampleDialog.open && exampleDialog.contains(link)) closeExample();
+            openTopic(topic, link);
+            return;
+          }
+          if (id === "main" && topicSections.length) {
+            event.preventDefault();
+            openTopic(topicSections[0], link);
+          }
+        });
+      });
+      // In the home view, the topic slides are opened from the navigation instead of stacked vertically.
+      root.classList.add("slide-mode");
+
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      // Reveal sections as they enter the viewport; keep everything visible if the API is unavailable.
+      const revealItems = document.querySelectorAll(".reveal");
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        document.documentElement.classList.add("motion-ready");
+        const observer = new IntersectionObserver((entries, currentObserver) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              currentObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+      }
+
+      // Full-stack request-flow animation (a visual model, not a network request).
+      const traceButton = document.getElementById("traceButton");
+      const traceSteps = Array.from(document.querySelectorAll("#requestFlow .flow-step"));
+      const traceStatus = document.getElementById("traceStatus");
+      if (traceButton && traceSteps.length && traceStatus) {
+        traceButton.addEventListener("click", () => {
+          if (traceButton.disabled) return;
+          traceSteps.forEach((step) => {
+            step.classList.remove("is-current", "is-done");
+            step.removeAttribute("aria-current");
+          });
+          traceButton.disabled = true;
+          let index = 0;
+          const advance = () => {
+            if (index > 0) {
+              traceSteps[index - 1].classList.remove("is-current");
+              traceSteps[index - 1].classList.add("is-done");
+              traceSteps[index - 1].removeAttribute("aria-current");
+            }
+            if (index >= traceSteps.length) {
+              traceStatus.textContent = "Flow complete: the response reached the browser. No live server was contacted.";
+              traceButton.disabled = false;
+              return;
+            }
+            traceSteps[index].classList.add("is-current");
+            traceSteps[index].setAttribute("aria-current", "step");
+            traceStatus.textContent = `Step ${index + 1} of ${traceSteps.length}: ${traceSteps[index].querySelector(".flow-description strong").textContent}.`;
+            index += 1;
+            window.setTimeout(advance, reduceMotion ? 0 : 620);
+          };
+          advance();
+        });
+      }
+
+      // HTML form example: native constraints run before this submit handler.
+      const goalForm = document.getElementById("goalForm");
+      const goalTitle = document.getElementById("goalTitle");
+      const goalDate = document.getElementById("goalDate");
+      const goalResult = document.getElementById("goalResult");
+      if (goalForm && goalTitle && goalDate && goalResult) {
+        goalTitle.addEventListener("input", () => goalTitle.setCustomValidity(""));
+        goalForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const title = goalTitle.value.trim();
+          if (title.length < 3) {
+            goalTitle.setCustomValidity("Please enter at least 3 non-space characters.");
+            goalTitle.reportValidity();
+            return;
+          }
+          goalTitle.setCustomValidity("");
+          const parsedDate = new Date(`${goalDate.value}T00:00:00`);
+          const dateText = Number.isNaN(parsedDate.getTime())
+            ? goalDate.value
+            : new Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(parsedDate);
+          const label = document.createElement("span");
+          label.textContent = "Goal saved in this page";
+          const result = document.createElement("strong");
+          result.textContent = `${title} · target ${dateText}`;
+          goalResult.replaceChildren(label, result);
+        });
+      }
+
+      // CSS example: the slider updates a custom property; the stylesheet draws the result.
+      const radiusRange = document.getElementById("radiusRange");
+      const radiusValue = document.getElementById("radiusValue");
+      const cssSample = document.getElementById("cssSample");
+      if (radiusRange && radiusValue && cssSample) {
+        radiusRange.addEventListener("input", () => {
+          const radius = Number(radiusRange.value);
+          cssSample.style.setProperty("--demo-radius", `${radius}px`);
+          radiusValue.textContent = `${radius} px`;
+        });
+      }
+
+      // JavaScript example: build DOM nodes and insert user input as text, never as HTML.
+      const taskForm = document.getElementById("taskForm");
+      const taskInput = document.getElementById("taskInput");
+      const taskList = document.getElementById("taskList");
+      const taskCount = document.getElementById("taskCount");
+      if (taskForm && taskInput && taskList && taskCount) {
+        const updateTaskCount = () => {
+          const items = Array.from(taskList.querySelectorAll("[data-task]"));
+          const completed = items.filter((item) => item.classList.contains("is-done")).length;
+          taskCount.textContent = `${completed} of ${items.length} complete · this list is not saved`;
+        };
+
+        taskList.addEventListener("click", (event) => {
+          const button = event.target.closest("[data-complete-task]");
+          if (!button) return;
+          const item = button.closest("[data-task]");
+          const label = item.querySelector(".task-label").textContent;
+          const isComplete = button.getAttribute("aria-pressed") !== "true";
+          button.setAttribute("aria-pressed", String(isComplete));
+          button.setAttribute("aria-label", `${isComplete ? "Mark incomplete" : "Mark complete"}: ${label}`);
+          button.textContent = isComplete ? "✓" : "○";
+          item.classList.toggle("is-done", isComplete);
+          updateTaskCount();
+        });
+
+        taskForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const title = taskInput.value.trim();
+          if (!title) {
+            taskInput.setCustomValidity("Enter a task before adding it.");
+            taskInput.reportValidity();
+            return;
+          }
+          taskInput.setCustomValidity("");
+          const item = document.createElement("li");
+          item.className = "task-item";
+          item.dataset.task = "";
+          const toggle = document.createElement("button");
+          toggle.className = "task-check";
+          toggle.type = "button";
+          toggle.dataset.completeTask = "";
+          toggle.setAttribute("aria-pressed", "false");
+          toggle.setAttribute("aria-label", `Mark complete: ${title}`);
+          toggle.textContent = "○";
+          const label = document.createElement("span");
+          label.className = "task-label";
+          label.textContent = title;
+          item.append(toggle, label);
+          taskList.append(item);
+          taskInput.value = "";
+          taskInput.focus();
+          updateTaskCount();
+        });
+
+        taskInput.addEventListener("input", () => taskInput.setCustomValidity(""));
+        updateTaskCount();
+      }
+    })();
+  </script>
+</body>
+</html>
